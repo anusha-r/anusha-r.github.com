@@ -1,1 +1,4 @@
 pygments: true
+markdown: rdiscount
+paginate: 8
+auto: true

@@ -1,3 +1,9 @@
+.posts {
+background-color: #222;
+position: absolute;
+left: 80%;
+}
+
 .ribbon {
   background-color: #000;
   overflow: hidden;
