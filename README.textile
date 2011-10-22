@@ -1,0 +1,4 @@
+bq. Hello!
+
+This is the repo of my personal blog with Github pages, darthvadar.github.com.
+I have been blogging since 2007 with wordpress and moved to Github in Oct 2011.
