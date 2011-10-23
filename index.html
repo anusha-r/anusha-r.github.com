@@ -1,17 +1,21 @@
 ---
 title: AR
-layout: default
+layout: landing
 ---
 
-<div id="posts">
-  <h3>Posts</h3>
-  <ul class="post-list">
-  	{% for post in site.posts %}
-	<p> {{post.date | date_to_string }} ::<b> <a href="{{post.url}}">{{ post.title }}</a> </b>  </p>
-	{% endfor %}
-  </ul>
-</div>
+<h3>Hi! I'm <span class="special-font">Anusha Rajan</span>.</h3>
+{% assign post = site.posts.first %}
+Latest Post:  
+<span class="post-short"> <a href="{{ post.url }}">{{ post.title }}</a></span>
+<span class="post-date">{{ post.date | date_to_string }}</span>
 
+<br/><br/>
 
+<a href="blog.html">...older posts</a>
 
+<br/>
+<br/>
+<br/>
+<br/>
 
+		

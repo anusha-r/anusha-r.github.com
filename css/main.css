@@ -1,7 +1,48 @@
-.posts {
-background-color: #222;
-position: absolute;
-left: 80%;
+#sideBar {
+float: left;
+width: 20%;
+padding-top: 50px;
+height: 100%;
+font-family:"Impact", Charcoal, sans-serif;
+}
+
+.impact-font{
+font-family:"Impact", Charcoal, sans-serif;
+}
+
+
+#wrapper {
+overflow: hidden;
+}
+
+.post-tags {
+
+}
+
+.special-font {
+font-family: 'MedievalSharp', cursive;
+}
+
+.post-short {
+font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: medium;
+color: blue;
+}
+
+.post-short a {
+text-decoration: none;
+}
+
+.post-date {
+font-size: small;
+color: #282828;
+}
+
+#mainContent {
+overflow:hidden;
+height: 90%;
+width:70%;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .ribbon {
@@ -18,6 +59,13 @@ left: 80%;
   -moz-box-shadow: 0 0 1em #888;
   -webkit-box-shadow: 0 0 1em #888;
 }
+
+.shadow {
+/* shadow */
+  -moz-box-shadow: 0 0 1em #888;
+  -webkit-box-shadow: 0 0 1em #888;
+}
+
 .ribbon a {
   border: 1px solid #000;
   color: #ff3300;

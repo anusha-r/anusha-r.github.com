@@ -1,0 +1,17 @@
+---
+title: AR's blog
+layout: default
+---
+
+
+		<table columns="3" noborder>
+		<h3 style="padding-left:5px;">Posts</h3>
+  		{% for post in site.posts %}
+		<tr>
+			<td align="right" class="post-date">{{post.date | date_to_string }}</td>
+			<td align="left" class="post-short"> <a href="{{post.url}}">{{ post.title }}</a> </td>		
+			<td align="right" class="post-tags">  </td>
+		</tr>
+		{% endfor %}
+		</table>
+		
