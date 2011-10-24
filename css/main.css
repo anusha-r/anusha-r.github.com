@@ -6,6 +6,20 @@ height: 100%;
 font-family:"Impact", Charcoal, sans-serif;
 }
 
+.round {
+border: .1em solid #900; 
+border-radius: 5px; 
+-webkit-border-radius: 5px; 
+-moz-border-radius: 5px;
+}
+
+.noborder-round {
+border-radius: 5px; 
+-webkit-border-radius: 5px; 
+-moz-border-radius: 5px;
+}
+
+
 .impact-font{
 font-family:"Impact", Charcoal, sans-serif;
 }
