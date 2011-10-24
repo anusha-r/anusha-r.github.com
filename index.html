@@ -3,15 +3,69 @@ title: AR
 layout: landing
 ---
 
-<h3>Hi! I'm <span class="special-font">Anusha Rajan</span>.</h3>
-{% assign post = site.posts.first %}
-Latest Post:  
-<span class="post-short"> <a href="{{ post.url }}">{{ post.title }}</a></span>
-<span class="post-date">{{ post.date | date_to_string }}</span>
+<div class="noborder-round" style="color:#ffffff;background-color:#000000;width:90%">
+	<h3><span class="special-font" style="margin-left:40%">Anusha Rajan</span></h3>
+</div>
 
-<br/><br/>
+<br/>
 
-<a href="blog.html">...older posts</a>
+<div style="width:100%; height:200px;">
+
+<div class="noborder-round" style="padding:10px; float:left; width:70%;">
+	<img class="shadow round" style="float:left; width:20%;" src="https://jargul.com/images/Empty.png" width="150px" height="150px"/>
+	<span style="float:left; width:75%; margin-left:2%;">Software developer. Technology enthusiast. From Chennai.
+	<br/>This is my blog hosted with <a href="http://www.github.com/darthvadar/darthvadar.github.com">github pages</a>
+	Opinions expressed here, if any, are my own and not those of my employer.</span>
+</div>
+
+<div class="round" style="float:left; padding:5px; margin-left:10px;"> 
+	<table border="0px" cell-padding="5px">
+			<tr>
+			<td><a href="http://www.github.com/darthvadar">
+			<img src="http://octodex.github.com/images/waldocat.jpg" width="50px" height="50px">
+			</td>
+
+			<td></td>
+			
+			<td><a href="http://www.linkedin.com/profile/view?id=32381032&pid=32534034&authType=name&authToken=zQcB&goback=%2Enmp_*1_*1_*1_*1_*1_*1%2Enpe_*1_en*4US_*1_*1_*1_*1%2Enpv1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1%2Enpe_*1_*1_*1_*1_*1_*1&trk=pbmap">
+			<img src="images/linkedin_logo.png" width="50px" height="50px"></a>
+			</td>
+			</tr>
+
+			<tr>
+			<td></td>
+			<td><a href="/index.html">Home</a></td>
+			<td></td>
+			</tr>
+
+			<tr>
+			<td>
+			<img src="images/twitter-logo.png" width="50px" height="50px"/>	
+			</td>
+			<td/>
+			<td>
+			<img src="images/facebook-logo.png" width="50px" height="50px"/>
+			</td>
+
+			</tr>
+	</table>
+</div>
+
+</div>
+
+<p style="clear:left;">
+<div> 
+<h3>Posts</h3>
+{% for post in site.posts %}
+&raquo; <span class="post-short"> <a href="{{ post.url }}">{{ post.title }}</a></span>
+<span class="post-date">{{ post.date | date_to_string }}</span><br/>
+{% endfor %}
+<br/>
+&raquo; <a href="blog.html">...view all</a>
+</div>
+</p>
+
+
 
 <br/>
 <br/>
