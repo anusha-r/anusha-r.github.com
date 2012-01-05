@@ -53,8 +53,8 @@
 </div>
 -->
 <span class="post-title"> {{ page.title }} </span>
-&nbsp;&nbsp; &nbsp; &nbsp; {{ page.date | date_to_string }}    
-<br/>
+<span class="post-short">&nbsp;&nbsp; &nbsp; &nbsp; {{ page.date | date_to_string }}    
+<br/> </span>
 <span class="red-color"> 
 	{% for tag in page.tags %}
          	 #{{ tag }}   
