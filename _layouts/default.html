@@ -10,6 +10,16 @@
 <body>
 <div id="wrapper">
 
+<div id="sideBar">
+<span class="post-short-black">
+<h3> Related Posts </h3>
+{% for post in site.related_posts limit:3 %}
+{{ post.title }} {{ post.date }}
+{% endfor %}
+</span>
+<h3><a href="/">Home</a></h3>
+
+</div>
 
 <!-- <div id="sideBar">	
 			<p><div style="padding-left:10px;">
@@ -68,10 +78,6 @@
 </div>
 
 </div>
-
-{% for post in site.related_posts limit:3 %}
-{{ post.title }} {{ post.date }}
-{% endfor %}
 
 
 </body>
