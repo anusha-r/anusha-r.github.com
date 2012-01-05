@@ -37,6 +37,11 @@ overflow: hidden;
 font-family: 'MedievalSharp', cursive;
 }
 
+.post-title {
+font-family: 'MedievalSharp', cursive;
+font-size: medium;
+}
+
 .post-short {
 font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 font-size: medium;
