@@ -39,13 +39,19 @@ font-family: 'MedievalSharp', cursive;
 
 .post-title {
 font-family: 'MedievalSharp', cursive;
-font-size: 20pt;
+font-size: 40pt;
 }
 
 .post-short {
 font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 font-size: medium;
 color: blue;
+}
+
+.post-short-black {
+font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: medium;
+color: black;
 }
 
 .red-color {
