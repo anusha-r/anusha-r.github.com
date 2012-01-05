@@ -54,7 +54,7 @@
 </div>
 -->
 <span class="post-title"> {{ page.title }} </span>
-<br/><span class="post-short-black">&nbsp;&nbsp; &nbsp; &nbsp; {{ page.date | date_to_string }}    
+<br/><span class="post-short-black">{{ page.date | date_to_string }}
 <br/> </span>
 <span class="red-color"> 
 	{% for tag in page.tags %}
@@ -68,6 +68,10 @@
 </div>
 
 </div>
+
+{% for post in site.related_posts limit:3 %}
+{{ post.title }} {{ post.date }}
+{% endfor %}
 
 
 </body>
