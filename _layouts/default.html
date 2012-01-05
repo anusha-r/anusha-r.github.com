@@ -10,6 +10,7 @@
 <body>
 <div id="wrapper">
 
+
 <!-- <div id="sideBar">	
 			<p><div style="padding-left:10px;">
 				<img class="shadow" src="https://jargul.com/images/Empty.png" width="150px" height="150px"/>	
@@ -53,7 +54,7 @@
 </div>
 -->
 <span class="post-title"> {{ page.title }} </span>
-<span class="post-short">&nbsp;&nbsp; &nbsp; &nbsp; {{ page.date | date_to_string }}    
+<br/><span class="post-short-black">&nbsp;&nbsp; &nbsp; &nbsp; {{ page.date | date_to_string }}    
 <br/> </span>
 <span class="red-color"> 
 	{% for tag in page.tags %}
