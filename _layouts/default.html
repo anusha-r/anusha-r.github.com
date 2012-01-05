@@ -53,12 +53,12 @@
 </div>
 -->
 <h1> {{ page.title }} </h1>
-<h4> {{ page.date | date_to_string }} </h4>
-<h4> <span class="red-color"> 
+{{ page.date | date_to_string }} 
+<span class="red-color"> 
 	{% for tag in page.tags %}
          	 #{{ tag }} 
 	{% endfor %}
-</span> </h4>
+</span> 
 <div id="mainContent">   
   
   {{ content }}
