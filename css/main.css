@@ -43,6 +43,10 @@ font-size: medium;
 color: blue;
 }
 
+.red-color {
+color: red;
+}
+
 .post-short a {
 text-decoration: none;
 }
