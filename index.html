@@ -1,76 +1,86 @@
----
-title: AR
-layout: landing
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>anusha-r</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- <div class="noborder-round" style="color:#ffffff;background-color:#000000;width:90%">
-	<h3><span class="special-font" style="margin-left:40%">Anusha Rajan</span></h3>
-</div>
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
-<br/>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
 
-<div style="width:100%; height:200px;">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
 
-<div class="noborder-round" style="padding:10px; float:left; width:70%;">
-	<img class="shadow round" style="float:left; width:20%;" src="https://jargul.com/images/Empty.png" width="150px" height="150px"/>
-	<span style="float:left; width:75%; margin-left:2%;">Software developer from Chennai.
-	<br/>This is my blog hosted with <a href="http://www.github.com/darthvadar/darthvadar.github.com">github pages.</a>
-	Opinions expressed here, if any, are my own and not those of my employer.</span>
-</div>
- -->
-<!-- <div class="round" style="float:left; padding:5px; margin-left:10px;"> 
-	<table border="0px" cell-padding="5px">
-			<tr>
-			<td><a href="http://www.github.com/darthvadar">
-			<img src="http://octodex.github.com/images/waldocat.jpg" width="50px" height="50px">
-			</td>
+  <body>
 
-			<td></td>
-			
-			<td><a href="http://www.linkedin.com/profile/view?id=32381032&pid=32534034&authType=name&authToken=zQcB&goback=%2Enmp_*1_*1_*1_*1_*1_*1%2Enpe_*1_en*4US_*1_*1_*1_*1%2Enpv1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1%2Enpe_*1_*1_*1_*1_*1_*1&trk=pbmap">
-			<img src="images/linkedin_logo.png" width="50px" height="50px"></a>
-			</td>
-			</tr>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">anusha-r</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>              
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 
-			<tr>
-			<td></td>
-			<td><a href="/index.html">Home</a></td>
-			<td></td>
-			</tr>
+    <div class="container">
 
-			<tr>
-			<td>
-			<img src="images/twitter-logo.png" width="50px" height="50px"/>	
-			</td>
-			<td/>
-			<td>
-			<img src="images/facebook-logo.png" width="50px" height="50px"/>
-			</td>
+      <h1>Blog</h1>
+      <p>
+      	{% for post in site.posts %}
+      		<span> <a href="{{ post.url }}">{{ post.title }}</a></span>
+			<span>{{ post.date | date_to_string }}</span> 
+			<span> {{ post.tags }} </span> <br/>
+		{% endfor %}
 
-			</tr>
-	</table>
-</div>
--->
-<!-- </div> -->
+      </p>
 
-<p style="clear:left;">
-<div> 
-<h3>Blog</h3>
-{% for post in site.posts %}
-&raquo; <span class="post-short"> <a href="{{ post.url }}">{{ post.title }}</a></span>
-<span class="post-date">{{ post.date | date_to_string }}</span> 
-<span class="post-date"> {{ post.tags }} </span> <br/>
-{% endfor %}
-<br/>
-<!-- &raquo; <a href="blog.html">...view all</a> -->
-</div>
-</p>
+    </div> <!-- /container -->
 
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
 
-
-<br/>
-<br/>
-<br/>
-<br/>
-
+  </body>
+</html>
 		
