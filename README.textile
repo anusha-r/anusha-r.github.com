@@ -1,6 +1,6 @@
 bq. Hello!
 
-This is the repo of my personal blog with Github pages, <a href="http://darthvadar.github.com">darthvadar.github.com</a>.
+This is the repo of my personal blog with Github pages, <a href="http://anusha-r.github.com">anusha-r.github.com</a>.
 I have been blogging since 2007 with wordpress and moved to Github in Oct 2011.
 
 GH gives me a clean, only-my-content place, a chance to learn git and makes me want to write more posts, yet another time. 
