@@ -58,7 +58,7 @@ layout: default
       <p>
       	{% for post in site.posts %}
       		<h3> <a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small> <small> {{ post.tags }} </small> </h3>
-		{% endfor %}
+	{% endfor %}
 
       </p>
 
