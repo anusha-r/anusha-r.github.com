@@ -1,6 +1,4 @@
 bq. Hello!
 
-This is the repo of my personal blog with Github pages, <a href="http://anusha-r.github.com">anusha-r.github.com</a>.
-I have been blogging since 2007 with wordpress and moved to Github in Oct 2011.
-
-GH gives me a clean, only-my-content place, a chance to learn git and makes me want to write more posts, yet another time. 
+This is the repo of my personal blog with Github pages, up at: <a href="http://anusha-r.github.com">http://anusha-r.github.com</a>.
+I blogged from 2007 until 2010, originally with wordpress and moved to Github in Oct 2011, added bootstrap in Mar 2014.
