@@ -14,7 +14,7 @@
  <span class="post-short-black">
 <h3> Related Posts </h3>
 {% for post in site.related_posts limit:3 %}
-{{ post.title }} -- <span class="post-date"> {{ post.date | date_to_string }} </span> 
+{{ post.title }} 
 <br/>
 {% endfor %}
 </span> 
@@ -23,6 +23,7 @@
 </div> -->
 
 <!-- <div id="sideBar">	
+-- <span class="post-date"> {{ post.date | date_to_string }} </span> 
 			<p><div style="padding-left:10px;">
 				<img class="shadow" src="https://jargul.com/images/Empty.png" width="150px" height="150px"/>	
 			</div></p>
@@ -60,13 +61,15 @@
 			</td>
 
 			</tr>
+			
+			<span class="post-short-black">{{ page.date | date_to_string }}
+<br/> </span>
 
 	</table></p>
 </div>
 -->
 <span class="post-title"> {{ page.title }} </span>
-<br/><span class="post-short-black">{{ page.date | date_to_string }}
-<br/> </span>
+<br/>
 <span class="red-color"> 
 	{% for tag in page.tags %}
          	 #{{ tag }}   
