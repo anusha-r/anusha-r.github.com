@@ -1,6 +1,14 @@
 ---
-layout : default
+layout: default
 ---
+      <p>
+      	{% for post in site.posts %}
+      		<h5> 
+      		<a href="{{ post.url }}">{{ post.title }}</a> 
+      		<small>{{ post.date | date_to_string }}</small> 
+      		<!-- &nbsp; &nbsp; &nbsp;<small> {{ post.tags }} </small> -->
+      
+      		</h5>
+	{% endfor %}
 
-
-Hi There!
+      </p>
